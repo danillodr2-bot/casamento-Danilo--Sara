@@ -74,28 +74,27 @@ if (formulario) {
 
       try {
 
-        const resposta =
-        await fetch(API_URL, {
+      await fetch(API_URL, {
 
-          method:"POST",
+  method: "POST",
 
-          body:JSON.stringify({
+  mode: "no-cors",
 
-            tipo:"presenca",
+  body: JSON.stringify({
 
-            nome:nome,
+    tipo:"presenca",
 
-            telefone:telefone,
+    nome:nome,
 
-            acompanhantes:acompanhantes,
+    telefone:telefone,
 
-            mensagem:mensagem
+    acompanhantes:acompanhantes,
 
-          })
+    mensagem:mensagem
 
-        });
+  })
 
-        await resposta.json();
+});
 
         document.getElementById("resultado")
         .innerHTML =

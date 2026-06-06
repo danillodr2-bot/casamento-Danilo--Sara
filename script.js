@@ -46,9 +46,7 @@ atualizarContador();
 // ===========================
 
 // COLE AQUI SUA URL DO APPS SCRIPT
-const API_URL =
-"https://script.google.com/macros/s/AKfycbzi5h4U6F3Q1ZlyOeVdQHpcaik4w_klMmQGOPhKOxromvkq10C510FOZWMy0DHMYZ2n/exec";
-
+const API_URL = "https://script.google.com/macros/s/AKfycbyxHlSG26H6Vxw9d0MuSEKivg8nDyLAeIkc6tmmLSTKeLT7-VU64c4paFUmxMkpFuvU/exec";
 const formulario =
 document.getElementById("formPresenca");
 

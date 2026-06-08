@@ -114,3 +114,113 @@ if (formulario) {
   );
 
 }
+// ===========================
+// LISTA DINÂMICA DE PRESENTES
+// ===========================
+
+async function carregarPresentes() {
+
+  try {
+
+    const resposta = await fetch(
+      API_URL + "?action=presentes"
+    );
+
+    const presentes = await resposta.json();
+
+    const container =
+      document.getElementById("listaPresentes");
+
+    container.innerHTML = "";
+
+    presentes.forEach(presente => {
+
+      const card = document.createElement("div");
+
+      card.className = "presente-card";
+
+      let botao = "";
+
+      if (presente.status === "Disponível") {
+
+        botao = `
+          <button onclick="reservarPresente('${presente.produto}')">
+            Escolher Presente
+          </button>
+        `;
+
+      } else {
+
+        botao = `
+          <button disabled>
+            Já Escolhido
+          </button>
+        `;
+      }
+
+      card.innerHTML = `
+        <h3>${presente.produto}</h3>
+        <p>Status: ${presente.status}</p>
+        ${botao}
+      `;
+
+      container.appendChild(card);
+
+    });
+
+  } catch (erro) {
+
+    console.error(erro);
+
+  }
+
+}
+
+async function reservarPresente(produto) {
+
+  const nome = prompt(
+    "Digite seu nome para reservar este presente:"
+  );
+
+  if (!nome) return;
+
+  try {
+
+    await fetch(API_URL, {
+
+      method: "POST",
+
+      mode: "no-cors",
+
+      body: JSON.stringify({
+
+        tipo: "presente",
+
+        produto: produto,
+
+        nome: nome
+
+      })
+
+    });
+
+    alert(
+      "🎁 Presente reservado com sucesso!"
+    );
+
+    setTimeout(
+      carregarPresentes,
+      1500
+    );
+
+  } catch (erro) {
+
+    alert(
+      "Erro ao reservar presente."
+    );
+
+  }
+
+}
+
+carregarPresentes();

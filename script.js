@@ -158,12 +158,21 @@ async function carregarPresentes() {
         `;
       }
 
-      card.innerHTML = `
-        <h3>${presente.produto}</h3>
-        <p>Status: ${presente.status}</p>
-        ${botao}
-      `;
+     card.innerHTML = `
+  <h3>${presente.produto}</h3>
 
+  <p>Status: ${presente.status}</p>
+
+  <a
+    href="${presente.link}"
+    target="_blank"
+    class="btn-mercadolivre"
+  >
+    🛒 Comprar no Mercado Livre
+  </a>
+
+  ${botao}
+`;
       container.appendChild(card);
 
     });

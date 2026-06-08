@@ -161,7 +161,17 @@ async function carregarPresentes() {
      card.innerHTML = `
   <h3>${presente.produto}</h3>
 
-  <p>Status: ${presente.status}</p>
+ <p class="${
+  presente.status === "Disponível"
+    ? "status-disponivel"
+    : "status-reservado"
+}">
+  ${
+    presente.status === "Disponível"
+      ? "🟢 Disponível"
+      : "🔴 Já Escolhido"
+  }
+</p>
 
   <a
     href="${presente.link}"

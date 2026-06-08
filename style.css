@@ -172,3 +172,24 @@ footer{
 .presente-card button{
   margin-top:10px;
 }
+.btn-mercadolivre{
+
+  display:inline-block;
+
+  margin-top:10px;
+
+  margin-right:10px;
+
+  padding:10px 16px;
+
+  border-radius:8px;
+
+  text-decoration:none;
+
+  background:#ffe600;
+
+  color:#333;
+
+  font-weight:bold;
+
+}

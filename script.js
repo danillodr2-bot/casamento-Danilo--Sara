@@ -243,3 +243,22 @@ async function reservarPresente(produto) {
 }
 
 carregarPresentes();
+function copiarPix() {
+
+  navigator.clipboard.writeText(
+    "71981052722"
+  );
+
+  const msg =
+    document.getElementById("pixMensagem");
+
+  msg.innerHTML =
+    "✅ Chave Pix copiada com sucesso!";
+
+  setTimeout(() => {
+
+    msg.innerHTML = "";
+
+  }, 3000);
+
+}

@@ -223,3 +223,74 @@ footer{
   opacity:.7;
 
 }
+.pix-section{
+
+  text-align:center;
+
+  padding:40px 20px;
+
+}
+
+.pix-card{
+
+  max-width:500px;
+
+  margin:auto;
+
+  background:white;
+
+  padding:30px;
+
+  border-radius:15px;
+
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.pix-icon{
+
+  font-size:50px;
+
+  margin-bottom:15px;
+
+}
+
+.pix-chave{
+
+  background:#f5f5f5;
+
+  padding:12px;
+
+  border-radius:8px;
+
+  margin:15px 0;
+
+  font-size:20px;
+
+  font-weight:bold;
+
+}
+
+.pix-btn{
+
+  padding:12px 20px;
+
+  border:none;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+}
+
+#pixMensagem{
+
+  margin-top:15px;
+
+  font-weight:bold;
+
+}

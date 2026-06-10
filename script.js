@@ -1,7 +1,6 @@
 // ===========================
 // CONTAGEM REGRESSIVA
-// ===========================
-
+// =======================
 const dataCasamento = new Date("2027-01-09T18:30:00");
 
 function atualizarContador() {

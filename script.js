@@ -261,4 +261,31 @@ function copiarPix() {
   }, 3000);
 
 }
+// ======================
+// CARROSSEL
+// ======================
 
+const slides =
+document.querySelectorAll(".slide");
+
+let slideAtual = 0;
+
+function trocarSlide(){
+
+  slides[slideAtual]
+    .classList.remove("active");
+
+  slideAtual++;
+
+  if(slideAtual >= slides.length){
+
+    slideAtual = 0;
+
+  }
+
+  slides[slideAtual]
+    .classList.add("active");
+
+}
+
+setInterval(trocarSlide, 1000);

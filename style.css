@@ -434,3 +434,27 @@ html, body{
   height:100%;
   object-fit:cover;
 }
+.hero-slider{
+  position: relative !important;
+  width: 100vw !important;
+  height: 100vh !important;
+
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+
+  max-width: none !important;
+}
+
+.slides{
+  width:100% !important;
+  height:100% !important;
+}
+
+.slide{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover;
+}

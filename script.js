@@ -288,4 +288,4 @@ function trocarSlide(){
 
 }
 
-setInterval(trocarSlide, 1000);
+setInterval(trocarSlide, 3000);

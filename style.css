@@ -471,5 +471,16 @@ html, body{
   .slide3{
     object-position:center 20%;
   }
+  .aviso-presente{
+
+  margin-top:12px;
+
+  font-size:14px;
+
+  color:#b26a00;
+
+  font-weight:600;
+
+  text-align:center;
 
 }

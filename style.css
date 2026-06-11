@@ -484,3 +484,67 @@ html, body{
   text-align:center;
 
 }
+html{
+  scroll-behavior:smooth;
+}
+
+.menu{
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:20px 40px;
+
+  background:rgba(0,0,0,.25);
+
+  backdrop-filter:blur(10px);
+
+  z-index:9999;
+
+}
+
+.logo{
+
+  color:white;
+
+  font-size:24px;
+
+  font-weight:bold;
+
+}
+
+.menu ul{
+
+  display:flex;
+
+  gap:25px;
+
+  list-style:none;
+
+}
+
+.menu a{
+
+  color:white;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+}
+
+.menu a:hover{
+
+  opacity:.8;
+
+}

@@ -458,3 +458,18 @@ html, body{
   height:100% !important;
   object-fit:cover;
 }
+@media (min-width: 769px){
+
+  .slide1{
+    object-position:center 15%;
+  }
+
+  .slide2{
+    object-position:center 10%;
+  }
+
+  .slide3{
+    object-position:center 20%;
+  }
+
+}

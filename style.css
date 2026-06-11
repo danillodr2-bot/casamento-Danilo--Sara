@@ -692,3 +692,27 @@ html{
   font-weight:bold;
 
 }
+@media (max-width:768px){
+
+  .menu{
+    display:none;
+  }
+
+  .overlay h1{
+    font-size:32px !important;
+  }
+
+  .overlay p{
+    font-size:18px !important;
+  }
+
+  #contador{
+    font-size:14px !important;
+    line-height:1.8;
+  }
+
+  .hero-slider{
+    height:100vh;
+  }
+
+}

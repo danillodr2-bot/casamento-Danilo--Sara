@@ -593,3 +593,13 @@ html{
   .slide{
   object-position:center center;
 }
+@media (max-width: 768px){
+
+  .overlay h1{
+
+    font-size: 36px !important;
+
+  }
+
+}
+  

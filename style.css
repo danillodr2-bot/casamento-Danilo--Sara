@@ -5,8 +5,8 @@
 }
 
 body{
-  font-family:'Montserrat',sans-serif;
-  background:#f8f5ef;
+  background:red !important;
+}
   color:#444;
   line-height:1.7;
 }

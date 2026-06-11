@@ -157,7 +157,7 @@ async function carregarPresentes() {
         `;
       }
 
-     card.innerHTML = `
+    card.innerHTML = `
   <h3>${presente.produto}</h3>
 
  <p class="${
@@ -181,6 +181,10 @@ async function carregarPresentes() {
   </a>
 
   ${botao}
+
+  <p class="aviso-presente">
+    💝 Pedimos gentilmente que os presentes sejam entregues até 05/12/2026.
+  </p>
 `;
       container.appendChild(card);
 

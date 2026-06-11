@@ -724,3 +724,23 @@ html{
   }
 
 }
+.btn-capa{
+
+  padding:12px 20px;
+
+  font-size:14px;
+
+  width:220px;
+
+}
+  @media (max-width:768px){
+
+  .overlay{
+
+    width:90%;
+
+    top:55%;
+
+  }
+
+}

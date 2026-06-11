@@ -555,14 +555,15 @@ html{
   }
 
 }
-  @media (max-width: 768px){
+@media (max-width:768px){
 
   .overlay h1{
-    font-size: 42px;
+    font-size:22px !important;
+    line-height:1.2;
   }
 
   .overlay p{
-    font-size: 18px;
+    font-size:16px !important;
   }
 
 }
@@ -713,6 +714,13 @@ html{
 
   .hero-slider{
     height:100vh;
+  }
+
+}
+@media (max-width:768px){
+
+  .menu{
+    display:none !important;
   }
 
 }

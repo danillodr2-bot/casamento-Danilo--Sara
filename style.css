@@ -663,3 +663,32 @@ html{
   }
 
 }
+.botoes-capa{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-top:20px;
+
+}
+
+.btn-capa{
+
+  display:inline-block;
+
+  background:white;
+
+  color:#444;
+
+  text-decoration:none;
+
+  padding:14px 24px;
+
+  border-radius:30px;
+
+  font-weight:bold;
+
+}

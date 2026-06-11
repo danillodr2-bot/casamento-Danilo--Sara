@@ -548,3 +548,48 @@ html{
   opacity:.8;
 
 }
+@media (max-width: 768px){
+
+  .hero-slider{
+    height: 75vh;
+  }
+
+}
+  @media (max-width: 768px){
+
+  .overlay h1{
+    font-size: 42px;
+  }
+
+  .overlay p{
+    font-size: 18px;
+  }
+
+}
+  @media (max-width: 768px){
+
+  #contador{
+    font-size:18px;
+    line-height:1.6;
+    padding:0 15px;
+  }
+
+}
+  @media (max-width: 768px){
+
+  .btn-capa{
+
+    padding:15px 25px;
+
+    font-size:16px;
+
+    width:90%;
+
+    max-width:300px;
+
+  }
+
+}
+  .slide{
+  object-position:center center;
+}

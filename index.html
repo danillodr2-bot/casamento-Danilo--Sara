@@ -2,200 +2,202 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Danilo & Sara</title>
+  <title>Danilo & Sara</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <nav class="menu">
 
-  <div class="logo">
-    Danilo ❤ Sara
-  </div>
+  <!-- CAPA -->
 
-  <ul>
+  <section class="hero-slider">
 
-    <li><a href="#inicio">Início</a></li>
+    <div class="slides">
 
-    <li><a href="#local">Local</a></li>
+      <img src="foto1.jpg.jpeg" class="slide slide1 active">
 
-    <li><a href="#rsvp">Presença</a></li>
+      <img src="foto2.jpg.jpeg" class="slide slide2">
 
-    <li><a href="#presentes">Presentes</a></li>
+      <img src="foto3.jpg.jpeg" class="slide slide3">
 
-    <li><a href="#pix">Pix</a></li>
-
-  </ul>
-
-</nav>
- <section class="hero-slider">
-
-  <div class="slides">
-
-  <img src="foto1.jpg.jpeg" class="slide slide1 active">
-
-<img src="foto2.jpg.jpeg" class="slide slide2">
-
-<img src="foto3.jpg.jpeg" class="slide slide3">
-
-  </div>
-<div class="overlay">
-
-  <h1>Danilo ❤ Sara</h1>
-
-  <p>09 de Janeiro de 2027</p>
-
-  <div id="contador"></div>
-
-  <div class="botoes-capa">
-
-    <a href="#rsvp" class="btn-capa">
-      Confirmar Presença
-    </a>
-
-    <a href="#presentes" class="btn-capa">
-      Lista de Presentes
-    </a>
-
-  </div>
-
-</div>
- 
-
-</section>
-
-
-<section id="inicio" class="convite">
-
-<h2>Nosso Convite</h2>
-
-<p>
-Com gratidão a Deus e grande alegria em nossos corações,
-convidamos você e sua família para celebrar conosco
-um dos momentos mais especiais de nossas vidas.
-</p>
-
-<p>
-Após nos conduzir por caminhos de amor, fé e propósito,
-o Senhor nos concede a bênção de unir nossas vidas em matrimônio.
-</p>
-
-</section>
-
-<section id="local" class="local">
-
-<h2>Local da Cerimônia e Recepção</h2>
-
-<p>
-Igreja Batista Nacional Boas Novas
-<br>
-Estr. Baiacu - Mar Grande
-<br>
-Vera Cruz - Bahia
-</p>
-
-<a
-class="botao"
-target="_blank"
-href="https://www.google.com/maps/search/?api=1&query=Igreja+Batista+Nacional+Boas+Novas+Vera+Cruz+BA">
-Abrir no Google Maps
-</a>
-
-</section>
-
-<section id="pix" class="pix-section">
-
-  <h2>💝 Presenteie os Noivos</h2>
-
-  <p>
-    Caso prefira, você também pode nos presentear através do Pix.
-  </p>
-
-  <div class="pix-card">
-
-    <div class="pix-icon">
-      💳
     </div>
 
-    <p><strong>Chave Pix:</strong></p>
+    <div class="overlay">
 
-    <div class="pix-chave">
-      71981052722
+      <h1>Danilo ❤ Sara</h1>
+
+      <p>09 de Janeiro de 2027</p>
+
+      <div id="contador"></div>
+
+      <div class="botoes-capa">
+
+        <a href="#rsvp" class="btn-capa">
+          Confirmar Presença
+        </a>
+
+        <a href="#presentes" class="btn-capa">
+          Lista de Presentes
+        </a>
+
+      </div>
+
     </div>
 
-    <button onclick="copiarPix()" class="pix-btn">
-      📋 Copiar Chave Pix
-    </button>
+  </section>
 
-    <p id="pixMensagem"></p>
+  <!-- CONVITE -->
 
-  </div>
+  <section id="inicio" class="convite">
 
-</section>
-<section id="presentes" class="presentes">
+    <h2>Nosso Convite</h2>
 
-  <h2>Lista de Presentes</h2>
+    <p>
+      Com gratidão a Deus e grande alegria em nossos corações,
+      convidamos você e sua família para celebrar conosco um dos momentos mais especiais de nossas vidas.
+    </p>
 
-  <div id="listaPresentes">
-    Carregando presentes...
-  </div>
+    <br>
 
-</section>
-  
-<section id="rsvp" class="rsvp">
+    <p>
+      Após nos conduzir por caminhos de amor, fé e propósito,
+      o Senhor nos concede a bênção de unir nossas vidas em matrimônio.
+    </p>
 
-<h2>Confirmar Presença</h2>
+  </section>
 
-<form id="formPresenca">
+  <!-- LOCAL -->
 
-<input
-type="text"
-id="nome"
-placeholder="Nome Completo"
-required>
+  <section id="local" class="local">
 
-<input
-type="tel"
-id="telefone"
-placeholder="Telefone"
-required>
+    <h2>Local da Cerimônia e Recepção</h2>
 
-<input
-type="number"
-id="acompanhantes"
-placeholder="Quantidade de acompanhantes">
+    <p>
+      Igreja Batista Nacional Boas Novas
+      <br>
+      Estr. Baiacu - Mar Grande
+      <br>
+      Vera Cruz - Bahia
+    </p>
 
-<textarea
-id="mensagem"
-placeholder="Mensagem para os noivos"></textarea>
+    <br>
 
-<button type="submit">
-Confirmar Presença
-</button>
+    <a
+      class="botao"
+      target="_blank"
+      href="https://www.google.com/maps/search/?api=1&query=Igreja+Batista+Nacional+Boas+Novas+Vera+Cruz+BA">
 
-</form>
+      Abrir no Google Maps
 
-<div id="resultado"></div>
+    </a>
 
-</section>
+  </section>
 
-<footer>
+  <!-- PIX -->
 
-<p>
-Danilo & Sara • 09/01/2027
-</p>
+  <section id="pix" class="pix-section">
 
-</footer>
+    <h2>💝 Presenteie os Noivos</h2>
 
-<script src="script.js"></script>
+    <p>
+      Caso prefira, você também pode nos presentear através do Pix.
+    </p>
+
+    <div class="pix-card">
+
+      <div class="pix-icon">
+        💳
+      </div>
+
+      <p><strong>Chave Pix:</strong></p>
+
+      <div class="pix-chave">
+        71981052722
+      </div>
+
+      <button onclick="copiarPix()" class="pix-btn">
+        📋 Copiar Chave Pix
+      </button>
+
+      <p id="pixMensagem"></p>
+
+    </div>
+
+  </section>
+
+  <!-- PRESENTES -->
+
+  <section id="presentes" class="presentes">
+
+    <h2>Lista de Presentes</h2>
+
+    <p class="aviso-presente">
+      ⚠️ O presente deve ser entregue até o dia 05/12/2026.
+    </p>
+
+    <div id="listaPresentes">
+      Carregando presentes...
+    </div>
+
+  </section>
+
+  <!-- RSVP -->
+
+  <section id="rsvp" class="rsvp">
+
+    <h2>Confirmar Presença</h2>
+
+    <form id="formPresenca">
+
+      <input
+        type="text"
+        id="nome"
+        placeholder="Nome Completo"
+        required>
+
+      <input
+        type="tel"
+        id="telefone"
+        placeholder="Telefone"
+        required>
+
+      <input
+        type="number"
+        id="acompanhantes"
+        placeholder="Quantidade de acompanhantes">
+
+      <textarea
+        id="mensagem"
+        placeholder="Mensagem para os noivos"></textarea>
+
+      <button type="submit">
+        Confirmar Presença
+      </button>
+
+    </form>
+
+    <div id="resultado"></div>
+
+  </section>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+
+    <p>
+      Danilo & Sara • 09/01/2027
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
- 
+
 </html>
